@@ -13,4 +13,12 @@
 
 Route::get('/', function () {
     return view('welcome');
+})->name('welcome');
+
+Route::get('/contact', function () {
+    return 'Contact!';
 });
+
+Route::get('/producten', 'ProductController@index');
+Route::get('/dit/is/een/lange-url/zeg', 'PageController@longUrl');
+Route::redirect('/korte-url', '/dit/is/een/lange-url/zeg');

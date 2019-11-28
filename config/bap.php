@@ -1,6 +1,6 @@
 <?php
 return[
-  'bap.student' => env('STUDENT_NAME', 'ZenzoBase')
+  'student' => env('STUDENT_NAME', 'ZenzoBase')
 ];
 
  ?>
