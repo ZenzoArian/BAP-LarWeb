@@ -19,6 +19,6 @@ Route::get('/contact', function () {
     return 'Contact!';
 });
 
-Route::get('/producten', 'ProductController@index');
-Route::get('/dit/is/een/lange-url/zeg', 'PageController@longUrl');
-Route::redirect('/korte-url', '/dit/is/een/lange-url/zeg');
+Route::get('/producten', 'ProductController@index')->name('ptoducten');
+Route::get('/dit/is/een/lange-url/zeg', 'PageController@longUrl')->name('page');
+Route::redirect('/korte-url', '/dit/is/een/lange-url/zeg')->name('korteUrl');
