@@ -15,6 +15,9 @@ Route::get('/',"HomeController@showHome")->name('homepage');
 Route::get('/over-ons-bedrijf',"HomeController@showAboutus")->name('about-us');
 Route::get('/hoihoihoi/{name}','HomeController@showName')->name('show-name');
 
+Route::get('/product/create', 'ProductAddController@create')->name('product.add');
+Route::post('/product/create', 'ProductAddController@store')->name('product.store');
+
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('welcome');

@@ -19,6 +19,7 @@
         <li><a href="{{route('homepage')}}">home</a></li>
         <li><a href="{{route('about-us')}}">about-us</a></li>
         <li><a href="{{route('show-name', ['name' => 'henkie']) }}">show-name</a></li>
+        <li><a href="{{route('product.add')}}">producten toevoegen</a></li>
       </ul>
     </nav>
 
