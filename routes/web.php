@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/',"HomeController@showHome")->name('homepage');
+Route::get('/over-ons-bedrijf',"HomeController@showAboutus")->name('about-us');
+Route::get('/hoihoihoi/{name}','HomeController@showName')->name('show-name');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('welcome');
 
 Route::get('/contact', function () {
     return 'Contact!';
