@@ -34,7 +34,15 @@ class ProductAddController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->all();
+        $request->validate([
+          'title' => 'required',
+          'description' => 'required',
+          'price' => 'required',
+          'pub_date' => 'required',
+          ]
+        );
+
+        return 'gelukt';
     }
 
     /**
