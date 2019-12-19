@@ -15,6 +15,8 @@ class homeController extends Controller
         'test'
       ];
 
+      // $companies = DB::select('select * from companies');
+
       return view('home', ['producten' => $products]);
     }
 
@@ -24,7 +26,7 @@ class homeController extends Controller
     }
 
     public function showName($name){
-      
+
       return view('showName', ['naam' => $name]);
     }
 }
