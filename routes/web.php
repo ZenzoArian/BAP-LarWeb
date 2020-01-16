@@ -37,3 +37,6 @@ Route::prefix('admin')->group(function(){
   Route::get('products', function(){ return 'products'; });
   Route::get('categories', function(){ return 'categories'; });
 });
+
+Route::get('/bedrijven','CompanyController@list')->name('company.list');
+Route::get('/bedrijven/{id}','CompanyController@details')->name('company.details');
