@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    
+
 </head>
 <body>
     <div id="app">
@@ -88,6 +88,7 @@
             <li><a href="{{route('about-us')}}">about-us</a></li>
             <li><a href="{{route('show-name', ['name' => 'henkie']) }}">show-name</a></li>
             <li><a href="{{route('product.add')}}">producten toevoegen</a></li>
+            <li><a href="{{route('Product.list')}}">producten lijst</a></li>
           </ul>
         </nav>
 
