@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('header')
 <h2>{{$products->title}}</h2>

@@ -15,8 +15,11 @@ Route::get('/',"HomeController@showHome")->name('homepage');
 Route::get('/over-ons-bedrijf',"HomeController@showAboutus")->name('about-us');
 Route::get('/hoihoihoi/{name}','HomeController@showName')->name('show-name');
 
+Route::prefix('admin')->middleware('auth')->group(function(){
+
 Route::get('/product/create', 'ProductAddController@create')->name('product.add');
 Route::post('/product/create', 'ProductAddController@store')->name('product.store');
+});
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -38,7 +41,13 @@ Route::prefix('admin')->group(function(){
   Route::get('categories', function(){ return 'categories'; });
 });
 
+Route::prefix('admin')->middleware('auth')->group(function(){
 Route::get('/bedrijven','CompanyController@list')->name('company.list');
 Route::get('/bedrijven/{id}','CompanyController@details')->name('company.details');
 Route::get('/products','ProductAddController@index')->name('Product.list');
 Route::get('/products/{$id}','ProductAddController@show')->name('Product.detail');
+});
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

@@ -1,26 +1,23 @@
-@extends('layouts.master')
-
-@section('header')
-Hompage
-@endsection
+@extends('layouts.app')
 
 @section('content')
-<h2>Producten</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-<ol>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-@foreach($producten as $product)
-@if ($product == 'autoradio')
-<li><strong>{{$product}}</strong></li>
-@else
-<li>{{$product}}</li>
-@endif
-@endforeach
-</ol>
-
-@for($i=1;$i<=10;$i++)
-  {{$i}} <br>
-
-@endfor
-
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
