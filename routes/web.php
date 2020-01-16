@@ -41,3 +41,4 @@ Route::prefix('admin')->group(function(){
 Route::get('/bedrijven','CompanyController@list')->name('company.list');
 Route::get('/bedrijven/{id}','CompanyController@details')->name('company.details');
 Route::get('/products','ProductAddController@index')->name('Product.list');
+Route::get('/products/{$id}','ProductAddController@show')->name('Product.detail');

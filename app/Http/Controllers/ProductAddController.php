@@ -45,23 +45,19 @@ class ProductAddController extends Controller
           'description' => 'required|min:10',
           'price' => 'required|numeric|gt:0',
           'pub_date' => 'required|after_or_equal:today',
+          'image' => 'image'
           ]
         );
 
         //gegevens in database opslaan
 
-        // $product = new Product();
-        // $product->title = $productData['title'];
-        // $product->description = $productData['description'];
-        // $product->price = $productData['price'];
-        // $product->pub_date = $productData['pub_date'];
-        //
-        //
-        // $product->save();
+        $newFilename = $productData['image']->store('products','public');
+        $productData['image'] = $newFilename;
 
         $product = Product::create($productData);
 
-        return 'gelukt';
+        // return 'gelukt';
+        return redirect()->route('product.list');
     }
 
     /**
@@ -73,6 +69,9 @@ class ProductAddController extends Controller
     public function show($id)
     {
         //
+        $product = Product::find($id);
+
+        return view('product.details', ['product' => $product]);
     }
 
     /**

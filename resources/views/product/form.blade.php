@@ -12,7 +12,7 @@
   <p>Er zijn fouten, het formulier is niet opgeslagen!</p>
 </div>
 @endif
-<form action="{{route('product.store')}}" method="POST">
+<form action="{{route('product.store')}}" method="POST" enctype="multipart/form-data">
   @csrf
   <div class="form-group">
     <label for="">Titel</label>
@@ -45,6 +45,15 @@
     <label for="">Publicatiedatum</label>
     <input type="text" class="form-control @error('pub_date') is-invalid @enderror" name="pub_date" value="{{old('pub_date')}}">
     @error('pub_date')
+    <div class="error-message">
+      {{$message}}
+    </div>
+    @enderror
+  </div>
+  <div class="form-group">
+    <label for="">Afbeelding</label>
+    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
+    @error('image')
     <div class="error-message">
       {{$message}}
     </div>
