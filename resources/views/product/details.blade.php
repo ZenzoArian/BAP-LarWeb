@@ -12,5 +12,5 @@
 <img src="{{asset('storage/' . $product->image)}}" onerror="this.style.display='none'"/>
 
 <hr>
-<a href="{{route('Product.list') }}">terug naar alle bedrijven</a>
+<a href="{{route('Product.list') }}">Back to posts</a>
 @endsection

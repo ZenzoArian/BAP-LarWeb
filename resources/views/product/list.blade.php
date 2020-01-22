@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('header')
-<h2>alle producten</h2>
+<h2>All posts</h2>
+<h2>{{ Auth::user()->name }}</h2>
 @endsection
 
 @section('content')

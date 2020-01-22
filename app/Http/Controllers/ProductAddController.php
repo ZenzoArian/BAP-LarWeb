@@ -16,7 +16,7 @@ class ProductAddController extends Controller
     {
         //
         // $products = Product::all();
-        $products = Product::paginate(10);
+        $products = Product::paginate(20);
 
 
         return view('product.list', ['products' => $products]);

@@ -77,7 +77,6 @@
         <header>
           HEADER
           @section('header')
-          De header
           @show
         </header>
 
@@ -87,8 +86,8 @@
             <li><a href="{{route('homepage')}}">home</a></li>
             <li><a href="{{route('about-us')}}">about-us</a></li>
             <li><a href="{{route('show-name', ['name' => 'henkie']) }}">show-name</a></li>
-            <li><a href="{{route('product.add')}}">producten toevoegen</a></li>
-            <li><a href="{{route('Product.list')}}">producten lijst</a></li>
+            <li><a href="{{route('product.add')}}">Add post</a></li>
+            <li><a href="{{route('Product.list')}}">All posts</a></li>
           </ul>
         </nav>
 
