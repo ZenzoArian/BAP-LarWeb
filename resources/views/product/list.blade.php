@@ -8,7 +8,7 @@
 <table>
   @foreach($products as $product)
   <tr>
-    <td><a href="#">{{$product->title}}</a></td>
+    <td><a href="{{route('Product.detail', ['id' => $product->id]) }}">{{$product->title}}</a></td>
     <td>{{$product->description}}</td>
     <td>{{$product->price}}</td>
     <td>{{$product->pub_date}}</td>

@@ -1,9 +1,16 @@
 @extends('layouts.app')
 
 @section('header')
-<h2>{{$products->title}}</h2>
+<h2>{{$product->title}}</h2>
 @endsection
 
 @section('content')
-  <img src="{{asset('storage/' . $product->image)}}" />
+{{$product->title}}<br>
+{{$product->description}}<br>
+{{$product->price}}<br>
+{{$product->pub_date}}<br>
+<img src="{{asset('storage/' . $product->image)}}" onerror="this.style.display='none'"/>
+
+<hr>
+<a href="{{route('Product.list') }}">terug naar alle bedrijven</a>
 @endsection

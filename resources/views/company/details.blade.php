@@ -15,5 +15,5 @@
 {{$bedrijf->description}}
 </p>
 <hr>
-<a href="{{route('company.list') }}">terug naar alle bedrijven</a>
+<a href="{{route('company.list', ['id' => $bedrijf->id]) }}">terug naar alle bedrijven</a>
 @endsection

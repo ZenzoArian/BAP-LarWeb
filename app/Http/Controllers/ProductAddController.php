@@ -57,7 +57,7 @@ class ProductAddController extends Controller
         $product = Product::create($productData);
 
         // return 'gelukt';
-        return redirect()->route('product.list');
+        return redirect()->route('Product.list');
     }
 
     /**
