@@ -28,6 +28,8 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                <a class="navbar-brand" href="{{route('post.add')}}">Add post</a>
+                <a class="navbar-brand" href="{{route('Post.list')}}">All posts</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -80,7 +82,7 @@
           @show
         </header>
 
-        <nav>
+        <!-- <nav>
           NAV
           <ul>
             <li><a href="{{route('homepage')}}">home</a></li>
@@ -89,7 +91,7 @@
             <li><a href="{{route('product.add')}}">Add post</a></li>
             <li><a href="{{route('Product.list')}}">All posts</a></li>
           </ul>
-        </nav>
+        </nav> -->
 
         <main class="py-4">
             @yield('content')

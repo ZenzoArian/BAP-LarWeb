@@ -46,6 +46,13 @@ Route::get('/bedrijven','CompanyController@list')->name('company.list');
 Route::get('/bedrijven/{id}','CompanyController@details')->name('company.details');
 Route::get('/products','ProductAddController@index')->name('Product.list');
 Route::get('/products/{id}','ProductAddController@show')->name('Product.detail');
+
+Route::get('/post','PostsAddController@index')->name('Post.list');
+Route::get('/posts/{id}','PostsAddController@show')->name('Post.detail');
+
+Route::get('/post/create', 'PostsAddController@create')->name('post.add');
+Route::post('/post/create', 'PostsAddController@store')->name('post.store');
+
 });
 
 Auth::routes();

@@ -13,7 +13,7 @@ class AddImageColumn extends Migration
      */
     public function up()
     {
-        Schema::table('products', function (Blueprint $table) {
+        Schema::table('posts', function (Blueprint $table) {
             //
             $table->string('image')->after('pub_date')->nullable();
         });
@@ -26,7 +26,7 @@ class AddImageColumn extends Migration
      */
     public function down()
     {
-        Schema::table('products', function (Blueprint $table) {
+        Schema::table('posts', function (Blueprint $table) {
             //
             $table->dropColumn('image');
         });

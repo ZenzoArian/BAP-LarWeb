@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Post;
 
 class PostSeeder extends Seeder
 {
@@ -17,7 +18,7 @@ class PostSeeder extends Seeder
       for($i = 0; $i < 200; $i++){
         $post = new Post();
         $post->title = $faker->text(20);
-        $post->description = $faker->text(200);
+        $post->description = $faker->text(400);
         $post->price = $faker->randomFloat(2,5,100);
         $post->pub_date = $faker->dateTimeBetween('-10 years', '+5 years');
         $post->save();
