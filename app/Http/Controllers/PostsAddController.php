@@ -22,6 +22,16 @@ class PostsAddController extends Controller
         return view('post.list', ['posts' => $posts]);
     }
 
+    public function home()
+    {
+        //
+        // $products = Product::all();
+        $posts = Post::orderBy('id', 'desc')->paginate(3);
+
+
+        return view('home', ['posts' => $posts]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

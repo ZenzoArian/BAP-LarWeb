@@ -43,7 +43,7 @@
   </div>
   <div class="form-group">
     <label for="">Publication date</label>
-    <input type="text" class="form-control @error('pub_date') is-invalid @enderror" name="pub_date" value="{{old('pub_date')}}">
+    <input type="text" class="form-control @error('pub_date') is-invalid @enderror" name="pub_date" value="{{old('pub_date')}}" placeholder="yyyy-mm-dd">
     @error('pub_date')
     <div class="error-message">
       {{$message}}
@@ -52,7 +52,7 @@
   </div>
   <div class="form-group">
     <label for="">Image</label>
-    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
+    <input type="file" class="form-control form-button @error('image') is-invalid @enderror" name="image">
     @error('image')
     <div class="error-message">
       {{$message}}

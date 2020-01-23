@@ -1,23 +1,33 @@
 @extends('layouts.app')
 
+@section('header')
+<h2>The latest posts.</h2>
+@endsection
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="master-post-container">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+  @foreach($posts as $post)
+  <div class="sub-post-con">
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+    <div class="post-title-con">
+      <h2><a href="{{route('Post.detail', ['id' => $post->id]) }}">{{$post->title}}</a></h2>
     </div>
+
+    <div class="post-des-con">
+      <p>{{$post->description}}</p>
+    </div>
+
+    <div class="post-date-con">
+      <p>{{$post->pub_date}}</p>
+    </div>
+
+    <td>{{$post->price}}</td>
+
+  </div>
+
+  @endforeach
 </div>
+
+
 @endsection

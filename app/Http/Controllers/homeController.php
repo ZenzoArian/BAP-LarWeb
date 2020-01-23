@@ -20,6 +20,7 @@ class HomeController extends Controller
       // $companies = DB::select('select * from companies');
 
       return view('home', ['producten' => $products]);
+      
     }
 
     public function showAboutus()

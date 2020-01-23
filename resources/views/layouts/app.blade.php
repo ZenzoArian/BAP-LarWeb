@@ -77,9 +77,12 @@
         </nav>
 
         <header>
-          HEADER
-          @section('header')
-          @show
+          <div class="header-text">
+            <h1>
+            @section('header')
+            @show
+          </h1>
+          </div>
         </header>
 
         <!-- <nav>

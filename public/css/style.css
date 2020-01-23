@@ -37,6 +37,14 @@ html{
   width: 30em;
   margin: 0 auto;
 }
+
+.header-text{
+  text-align: center;
+}
+
+main{
+  height: 100vh;
+}
 /* ----------------------------------------------------------------- */
 .master-post-container{
   margin: 0 auto;
@@ -67,4 +75,18 @@ html{
 
 .post-des-con-detail{
 
+}
+/* ------------------------------------------------------------------ */
+
+.form-control{
+  /* max-width: 70%; */
+}
+
+form{
+margin: 0 auto;
+width: 70%;
+}
+
+.form-button{
+  height: 3em;
 }
