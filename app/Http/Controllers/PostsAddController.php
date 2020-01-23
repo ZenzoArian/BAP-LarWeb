@@ -16,7 +16,7 @@ class PostsAddController extends Controller
     {
         //
         // $products = Product::all();
-        $posts = Post::orderBy('id', 'desc')->paginate(20);
+        $posts = Post::orderBy('id', 'desc')->paginate(5);
 
 
         return view('post.list', ['posts' => $posts]);

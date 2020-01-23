@@ -15,3 +15,56 @@ html{
   padding: 3px;
   width: 50%;
 }
+
+.P404B{
+  font-size: 10vw;
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+.P404S{
+  font-size: 3vw;
+  text-align: center;
+}
+
+.P404I{
+  font-size: 3vw;
+  text-align: center;
+  margin: 0 0 10em 0;
+}
+
+.paginate-con{
+  width: 30em;
+  margin: 0 auto;
+}
+/* ----------------------------------------------------------------- */
+.master-post-container{
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.sub-post-con{
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  padding: 1em;
+}
+
+.post-des-con{
+  max-height: 5em;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.post-img{
+  max-width: 20em;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3em;
+}
+
+.post-des-con-detail{
+
+}

@@ -15,10 +15,10 @@ class PostSeeder extends Seeder
       //200 products generator
       $faker = Faker\Factory::create();
 
-      for($i = 0; $i < 200; $i++){
+      for($i = 0; $i < 50; $i++){
         $post = new Post();
         $post->title = $faker->text(20);
-        $post->description = $faker->text(400);
+        $post->description = $faker->text(800);
         $post->price = $faker->randomFloat(2,5,100);
         $post->pub_date = $faker->dateTimeBetween('-10 years', '+5 years');
         $post->save();
