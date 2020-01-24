@@ -6,22 +6,8 @@ link to User stories: [User-Stories]
 
 <br>
 
-Planning:
+To make the website work:
 
-6-1-2020 t/m 12-1-2020
-
-B18 - B19 - B20 - B21 - B22
-
-           -
-
-13-1-2020 t/m 19-1-2020
-
-B23 - B24 - B25 - B26 - B27
-
-           -
-
-20-1-2020 t/m 26-1-2020
-
-B28 - B29 - (Missed deadlines make-up)
-
-           -
+- make databse called: laravel-data
+- type in command prompt: php artisan migrate
+- type in command prompt: php artisan db:seed
