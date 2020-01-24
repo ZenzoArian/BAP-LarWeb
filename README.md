@@ -13,7 +13,7 @@ To make the website work:
 - type in command prompt: php artisan db:seed
 
 
-        -
+
 
 user stories: 
 
