@@ -8,12 +8,16 @@ html{
 
 .error-message{
   margin: 5px 0;
-  background: #ff0000;
-  border: 1px solid red;
+  background: #f9d6d5;
+  border: 1px solid #f7c6c5;
   border-radius: 0 8px 8px 0;
-  color: #ffffff;
+  color: #761b55;
   padding: 3px;
   width: 50%;
+}
+
+.alert-danger{
+  text-align: center;
 }
 
 .P404B{
@@ -43,7 +47,10 @@ html{
 }
 
 main{
-  height: 100vh;
+  min-height: 100vh;
+}
+.NoGo{
+  display: none;
 }
 /* ----------------------------------------------------------------- */
 .master-post-container{
@@ -75,6 +82,14 @@ main{
 
 .post-des-con-detail{
 
+}
+
+.post-date-con{
+  float: left;
+}
+
+.post-user-con{
+  float: right;
 }
 /* ------------------------------------------------------------------ */
 

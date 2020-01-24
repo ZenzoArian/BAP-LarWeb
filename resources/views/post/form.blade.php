@@ -59,6 +59,9 @@
     </div>
     @enderror
   </div>
+  <div class="form-group NoGo">
+    <input type="text" class="form-control" name="user" value="{{ Auth::user()->name }}" placeholder="{{ Auth::user()->name }}">
+  </div>
   <button type="submit" class="btn btn-primary">Post blog!</button>
 </form>
 @endsection

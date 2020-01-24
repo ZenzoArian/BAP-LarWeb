@@ -49,13 +49,13 @@ Route::get('/products/{id}','ProductAddController@show')->name('Product.detail')
 
 
 
-Route::get('/posts/{id}','PostsAddController@show')->name('Post.detail');
 Route::get('/post/create', 'PostsAddController@create')->name('post.add');
 Route::post('/post/create', 'PostsAddController@store')->name('post.store');
 
 });
 Route::get('/',"PostsAddController@home")->name('homepage');
 Route::get('/post','PostsAddController@index')->name('Post.list');
+Route::get('/posts/{id}','PostsAddController@show')->name('Post.detail');
 
 Auth::routes();
 

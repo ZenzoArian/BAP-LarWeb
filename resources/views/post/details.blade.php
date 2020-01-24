@@ -23,6 +23,10 @@
       <p>{{$post->pub_date}}</p>
     </div>
 
+    <div class="post-user-con">
+      <p>-{{$post->user}}</p>
+    </div>
+
     <td>{{$post->price}}</td>
   </div>
 

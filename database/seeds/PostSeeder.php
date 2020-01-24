@@ -17,6 +17,7 @@ class PostSeeder extends Seeder
 
       for($i = 0; $i < 50; $i++){
         $post = new Post();
+        $post->user = $faker->text(15);
         $post->title = $faker->text(20);
         $post->description = $faker->text(800);
         $post->price = $faker->randomFloat(2,5,100);

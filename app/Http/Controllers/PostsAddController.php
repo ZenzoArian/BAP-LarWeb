@@ -16,7 +16,7 @@ class PostsAddController extends Controller
     {
         //
         // $products = Product::all();
-        $posts = Post::orderBy('id', 'desc')->paginate(5);
+        $posts = Post::orderBy('pub_date', 'desc')->paginate(5);
 
 
         return view('post.list', ['posts' => $posts]);
@@ -55,7 +55,8 @@ class PostsAddController extends Controller
           'description' => 'required|min:10',
           'price' => 'required|numeric|gt:0',
           'pub_date' => 'required|after_or_equal:today',
-          'image' => 'image'
+          'image' => 'required',
+          'user' => 'required'
           ]
         );
 
