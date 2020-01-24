@@ -18,7 +18,8 @@ class CreatePostsTable extends Migration
           $table->string('user', 255);
           $table->string('title', 255);
           $table->text('description')->nullable();
-          $table->decimal('price', 8, 2);
+          $table->string('seriesA', 255);
+          $table->string('seriesB', 255);
           $table->date('pub_date')->nullable();
           $table->timestamps();
       });

@@ -20,7 +20,8 @@ class PostSeeder extends Seeder
         $post->user = $faker->text(15);
         $post->title = $faker->text(20);
         $post->description = $faker->text(800);
-        $post->price = $faker->randomFloat(2,5,100);
+        $post->seriesA = $faker->numberBetween($min = 1, $max = 5);
+        $post->seriesB = $faker->numberBetween($min = 5, $max = 10);
         $post->pub_date = $faker->dateTimeBetween('-10 years', '+5 years');
         $post->save();
 

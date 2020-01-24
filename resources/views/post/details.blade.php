@@ -9,6 +9,10 @@
 
   <div class="sub-post-con">
 
+    <div class="post-series-con right">
+      <p>{{$post->seriesA}} / {{$post->seriesB}}</p>
+    </div>
+
     <div class="post-title-con">
       <h2><a href="{{route('Post.detail', ['id' => $post->id]) }}">{{$post->title}}</a></h2>
     </div>
@@ -27,7 +31,6 @@
       <p>-{{$post->user}}</p>
     </div>
 
-    <td>{{$post->price}}</td>
   </div>
 
 </div>

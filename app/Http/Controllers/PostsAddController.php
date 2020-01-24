@@ -53,7 +53,8 @@ class PostsAddController extends Controller
         $postData = $request->validate([
           'title' => 'required|min:3',
           'description' => 'required|min:10',
-          'price' => 'required|numeric|gt:0',
+          'seriesA' => 'required|numeric|gt:0',
+          'seriesB' => 'required|numeric|gt:0',
           'pub_date' => 'required|after_or_equal:today',
           'image' => 'required',
           'user' => 'required'

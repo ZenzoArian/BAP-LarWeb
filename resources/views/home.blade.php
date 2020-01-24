@@ -10,6 +10,10 @@
   @foreach($posts as $post)
   <div class="sub-post-con">
 
+    <div class="post-series-con right">
+      <p>{{$post->seriesA}} / {{$post->seriesB}}</p>
+    </div>
+
     <div class="post-title-con">
       <h2><a href="{{route('Post.detail', ['id' => $post->id]) }}">{{$post->title}}</a></h2>
     </div>
@@ -25,8 +29,6 @@
     <div class="post-user-con">
       <p>-{{$post->user}}</p>
     </div>
-
-    <td>{{$post->price}}</td>
 
   </div>
 

@@ -63,7 +63,10 @@ main{
   display: block;
   margin: 0 auto;
 }
-
+.noFloat{
+  float: none;
+  clear: both;
+}
 .navbar-light .navbar-brand{
   transition: 1.5s ease color;
 }
@@ -85,6 +88,7 @@ main{
   margin-bottom: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
   padding: 1em;
+  min-height: 12em;
 }
 
 .post-des-con{
@@ -105,11 +109,16 @@ main{
 }
 
 .post-date-con{
+  margin-top: .5em;
   float: left;
 }
 
 .post-user-con{
+  margin-top: .5em;
   float: right;
+}
+.post-series-con{
+
 }
 /* ------------------------------------------------------------------ */
 
@@ -124,5 +133,21 @@ width: 70%;
 
 .form-button{
   height: 3em;
+}
+.seriesA{
+  max-width: 5em;
+  float: left;
+}
+.seriesB{
+  max-width: 5em;
+  float: left;
+  margin-left: 1em;
+  margin-top: 8px;
+}
+.series-p{
+  font-size: 2em;
+  float: left;
+  margin-top: .9em;
+  margin-left: .5em;
 }
 /* -------------------------------------------------------------------- */

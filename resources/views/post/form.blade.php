@@ -32,18 +32,34 @@
     </div>
     @enderror
   </div>
-  <div class="form-group">
-    <label for="">Price</label>
-    <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" value="{{old('price')}}">
-    @error('price')
+
+  <div class="form-group seriesA">
+    <label for="">Post series</label>
+    <input type="number" class="form-control @error('seriesA') is-invalid @enderror" name="seriesA" value="1">
+    @error('seriesA')
     <div class="error-message">
       {{$message}}
     </div>
     @enderror
   </div>
+
+<p class="series-p"> / </p>
+
+  <div class="form-group seriesB">
+    <label for=""></label>
+    <input type="number" class="form-control @error('seriesB') is-invalid @enderror" name="seriesB" value="1">
+    @error('seriesB')
+    <div class="error-message">
+      {{$message}}
+    </div>
+    @enderror
+  </div>
+
+  <div class="noFloat"></div>
+
   <div class="form-group">
     <label for="">Publication date</label>
-    <input type="text" class="form-control @error('pub_date') is-invalid @enderror" name="pub_date" value="{{old('pub_date')}}" placeholder="yyyy-mm-dd">
+    <input type="date" class="form-control @error('pub_date') is-invalid @enderror" name="pub_date" value="{{old('pub_date')}}" placeholder="yyyy-mm-dd">
     @error('pub_date')
     <div class="error-message">
       {{$message}}
