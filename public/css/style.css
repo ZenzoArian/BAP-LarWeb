@@ -108,6 +108,10 @@ main{
 
 }
 
+.detail-box{
+  min-height: 50em;
+}
+
 .post-date-con{
   margin-top: .5em;
   float: left;

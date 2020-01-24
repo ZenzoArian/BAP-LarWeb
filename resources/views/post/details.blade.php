@@ -7,7 +7,7 @@
 @section('content')
 <div class="master-post-container">
 
-  <div class="sub-post-con">
+  <div class="sub-post-con detail-box">
 
     <div class="post-series-con right">
       <p>{{$post->seriesA}} / {{$post->seriesB}}</p>
