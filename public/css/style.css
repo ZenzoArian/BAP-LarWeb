@@ -52,6 +52,17 @@ main{
 .NoGo{
   display: none;
 }
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.center{
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
 /* ----------------------------------------------------------------- */
 .master-post-container{
   margin: 0 auto;

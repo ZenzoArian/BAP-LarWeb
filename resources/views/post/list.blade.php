@@ -33,8 +33,13 @@
   @endforeach
 </div>
 
-<div class="paginate-con">
-{{$posts->links()}}
+
+<div class="center">
+<a class="btn btn-primary left" href="{{route('post.add')}}">Add post</a>
+<a class="btn btn-primary right" href="{{route('Post.list')}}">All posts</a>
 </div>
 
+<div class="paginate-con">
+  {{$posts->links()}}
+</div>
 @endsection
