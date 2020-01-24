@@ -32,6 +32,8 @@
 
 </div>
 
-<hr>
-<a href="{{route('Post.list') }}">Back to posts</a>
+<div class="center">
+<a class="btn btn-primary left" href="{{route('Post.list') }}">Back to posts</a>
+</div>
+
 @endsection

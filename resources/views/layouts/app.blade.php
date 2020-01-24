@@ -26,7 +26,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <!-- {{ config('app.name', 'Laravel') }} -->
+                    Home
                 </a>
                 <a class="navbar-brand" href="{{route('post.add')}}">Add post</a>
                 <a class="navbar-brand" href="{{route('Post.list')}}">All posts</a>
